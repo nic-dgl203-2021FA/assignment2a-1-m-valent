@@ -626,10 +626,12 @@ footer {
 
   .hero img {
     margin: 0 0 0 auto;
+    grid-row: 2 / 3;
   }
 
   .hero article {
     max-width: 1000px;
+    grid-column: 3 / 6;
   }
 
   /* ######### 10a-ii. Navigation, Large screen rules ######### */
