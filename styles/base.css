@@ -107,14 +107,22 @@ i {
   color: #fff;
   font-size: 20px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 10px 2fr 10px;
+  grid-template-rows: .5fr 1fr 20px;
+  grid-gap: 20px;
 }
 
 .hero img {
   margin: auto;
   padding-top: 1rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 .hero article {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .hero h1 {
