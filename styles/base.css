@@ -873,6 +873,9 @@ footer {
   
   /* ######### 10a-viii. Footer, Large screen rules ######### */
   footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .25fr;
   }
 
   .contact {
@@ -886,6 +889,9 @@ footer {
 
   .social article {
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    align-items: center;
   }
 
   .socialIcons {
@@ -902,6 +908,7 @@ footer {
     background-color: #b6e8ff;
     color: #233156;
     padding: 1rem 0 0;
+    grid-column: 1 / -1;
   }
 }
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
