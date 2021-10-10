@@ -878,8 +878,8 @@ footer {
     grid-template-rows: 1fr .25fr;
   }
 
-  .contact {
-  }
+  /* .contact {
+  } */
 
   .social h3 {
     border-bottom: none;
