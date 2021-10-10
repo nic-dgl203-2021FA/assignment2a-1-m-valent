@@ -1085,6 +1085,16 @@ content: "\f192"; /* unicode for fa dot circle */
   /*  ########### NEW CODE START (05_03) ########### */
   form#contactForm {
     max-width: initial;
+    max-width: initial;
+    grid-area: f;
+    display: grid;
+    grid-template-areas:
+      "name ph"
+      "email news"
+      "radio radio"
+      "msg msg"
+      "btn .";
+    grid-gap: 1rem;
   }
 
   .contactForm div {
@@ -1092,22 +1102,28 @@ content: "\f192"; /* unicode for fa dot circle */
   }
 
   .contactForm div:nth-child(1) {
+    grid-area: name;
   }
 
   .contactForm div:nth-child(2) {
+    grid-area: ph;
   }
 
   .contactForm div:nth-child(3) {
+    grid-area: email;
   }
 
   .contactForm div:nth-child(4) {
+    grid-area: radio;
   }
 
   .contactForm div:nth-child(5) {
+    grid-area: msg;
   }
 
   .contactForm div:nth-child(6) {
     margin: 1.8rem 0 0;
+    grid-area: news;
   }
 
   .contactForm button {
