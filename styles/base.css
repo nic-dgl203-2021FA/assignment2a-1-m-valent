@@ -404,27 +404,42 @@ nav .btn:hover {
 .teamMembers {
   list-style-type: none;
   margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
 }
 
 .teamMembers li {
+  grid-row: 1 / 2;
 }
 
 .teamMembers li:nth-child(1) {
+  grid-column: 1 / 4;
+  order: 1;
 }
 
 .teamMembers li:nth-child(2) {
+  grid-column: 3 / 6;
 }
 
 .teamMembers li:nth-child(3) {
+  grid-column: 4 / 8;
+  order: 1;
+  text-align: center;
 }
 
 .teamMembers li:nth-child(4) {
+  grid-column: -3 / 6;
+  text-align: right;
 }
 
 .teamMembers li:nth-child(5) {
+  grid-column: -4 / -1;
+  text-align: right;
 }
 
 .teamMembers li:hover {
+  order: 2;
 }
 
 .teamMembers img {
@@ -435,6 +450,7 @@ nav .btn:hover {
 }
 
 .teamMembers li:nth-child(3) img {
+  width: 70%;
 }
 
 /* ############ 7. Problem ############ */
