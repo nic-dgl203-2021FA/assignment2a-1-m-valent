@@ -12,68 +12,80 @@ TABLE OF CONTENTS
     7a. Actions
   8. Gallery
   9. Footer
-    9a. Contact
+    9a. Contact 
     9b. Connect
   10. Media Queries
     10a. Media Query, (min-width: 700px)
-      10a-i. Hero
-      10a-ii. Navigation, Large screen
-      10a-iii. Trips, Large screen
-      10a-iv. CTA summaries, Large screen rules
-      10a-v. Team, Large screen rules
-      10a-vi. Problem
-      10a-vii. Actions
-      10a-viii. Footer
+        10a-i. Hero
+        10a-ii. Navigation, Large screen
+        10a-iii. Trips, Large screen
+        10a-iv. CTA summaries, Large screen rules
+        10a-v. Team, Large screen rules
+        10a-vi. Problem
+        10a-vii. Actions
     10b. Media Query, (min-width: 1000px)
 
 */
 
 /* ############ 1. Global Styles ############ */
- article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-   display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
- * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-size: 100%;
- }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
 
- body > * {
-   font-family: 'Lato', sans-serif;
-   line-height: 1.4;
- }
+body > * {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+}
 
- img {
-   max-width: 100%;
-   height: auto;
- }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
- h1, h2, h3, h4 {
-   font-family: 'Nunito', sans-serif;
-   line-height: 1;
- }
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1;
+}
 
- h1 {
-   font-size: 2.5rem;
- }
+h1 {
+  font-size: 2.5rem;
+}
 
- h2 {
-   font-size: 2rem;
- }
+h2 {
+  font-size: 2rem;
+}
 
- h3 {
-   font-size: 1.6rem;
- }
+h3 {
+  font-size: 1.6rem;
+}
 
- h4 {
-   font-size: 1.4rem;
- }
+h4 {
+  font-size: 1.4rem;
+}
 
- p {
-   line-height: 1.4;
- }
+p {
+  line-height: 1.4;
+}
 
 a {
   color: #36bae6;
@@ -99,7 +111,7 @@ i {
   grid-template-columns: 10px 2fr 10px;
   grid-template-rows: .5fr 1fr 20px;
   grid-gap: 20px;
- }
+}
 
 .hero img {
   margin: auto;
@@ -128,11 +140,10 @@ i {
   margin: .75rem auto 0;
 }
 
-
 /* ############ 3. Navigation ############ */
 .logo {
   max-width: 90px;
- }
+}
 
 .navWrap {
   position: sticky;/*  ** note the menu will not be sticky until we add more page content */
@@ -223,7 +234,7 @@ nav::after {
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav ul li a {
@@ -245,7 +256,7 @@ nav ul li:last-of-type::before {
   content: "";
   display: block;
   padding: .5rem;
-  }
+}
 
 nav .btn {
   background: #fff;
@@ -310,7 +321,8 @@ nav .btn:hover {
   grid-template-rows: auto minmax(140px, 1fr) auto;
 }
 
-.tripList h3, .tripList img {
+.tripList h3,
+.tripList img {
   grid-row: 1 / 2;
   grid-column: 1;
 }
@@ -441,7 +453,6 @@ nav .btn:hover {
 .teamMembers li:nth-child(3) img {
   width: 70%;
 }
-
 
 /* ############ 7. Problem ############ */
 section.problem {
@@ -587,6 +598,7 @@ section.problem {
 footer {
   margin-top: 1rem;
 }
+
 /* ######### 9a. Footer > Contact ######### */
 .form {
   background-color: #223055;
@@ -598,155 +610,157 @@ footer {
   font-weight: 300;
   padding-bottom: 1rem;
 }
+
 /* ######### Contact Form ######### */
 form#contactForm {
-    max-width: 350px;
-    margin: auto;
+  max-width: 350px;
+  margin: auto;
 }
 
 .contactForm div {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .contactForm div:first-of-type {
-  margin-top: 0;
+margin-top: 0;
 }
 
 .contactForm label {
-  display: block;
+display: block;
 }
 
 .contactForm input, .contactForm textarea {
-  border: solid 1px #dedede;
-  border-radius: 4px;
-  color: #707070;
-  cursor: text;
-  font-size: 1rem;
-  max-width: 350px;
-  padding: .5rem;
-  width: 100%;
+border: solid 1px #dedede;
+border-radius: 4px;
+color: #707070;
+cursor: text;
+font-size: 1rem;
+max-width: 350px;
+padding: .5rem;
+width: 100%;
 }
 
 .contactForm textarea {
-  min-height: 100px;
+min-height: 100px;
 }
 
 .contactForm button {
-  background-color: #13b1e7;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 1rem;
-  padding: .5rem;
-  min-width: 200px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+background-color: #13b1e7;
+border: none;
+border-radius: 4px;
+color: #fff;
+font-size: 1rem;
+padding: .5rem;
+min-width: 200px;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .contactForm button:hover {
-  background-color: #35b1e8;
-  color: #ffc107;
+background-color: #35b1e8;
+color: #ffc107;
 }
 
 .contactForm i {
-  font-size: 200%;
-  padding-right: .5rem;
+font-size: 200%;
+padding-right: .5rem;
 }
 
 .contactForm input[type="submit"]:active {
-  box-shadow: 1px 1px 6px rgba(255,255,255,.6), 0px 0px 4px rgba(255,255,255,.8);
+box-shadow: 1px 1px 6px rgba(255,255,255,.6), 0px 0px 4px rgba(255,255,255,.8);
 }
 
 .contactForm .checks {
-  margin: .25em 0 1em .1em;
+margin: .25em 0 1em .1em;
 }
 
 .contactForm input[type="checkbox"] + label {
-  display: inline-block;
-  padding-top: 0;
-  margin-top: 0;
+display: inline-block;
+padding-top: 0;
+margin-top: 0;
 }
 
 /* custom checkbox */
 .contactForm .checks label {
-  display: inline-block;
+display: inline-block;
 }
 
 .contactForm input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  width: 20px;
-  height: 20px;
-  margin: 1px 0 0 -1px;
+position: absolute;
+opacity: 0;
+width: 20px;
+height: 20px;
+margin: 1px 0 0 -1px;
 }
 
 input[type="checkbox"]:checked ~ span:before {
-  content: "\f14a";
+content: "\f14a";
 }
 
 .checks span:before {
-  display: inline-block;
-  box-sizing: border-box;
-  color: #13b1e7;
-  content: "\f0c8";
-  font-family: "Font Awesome 5 Free";
-  font-size: 1.3em;
-  margin: -3px 3px 0 0;
-  vertical-align: middle;
+display: inline-block;
+box-sizing: border-box;
+color: #13b1e7;
+content: "\f0c8";
+font-family: "Font Awesome 5 Free";
+font-size: 1.3em;
+margin: -3px 3px 0 0;
+vertical-align: middle;
 }
 
 .contactForm input:focus, .contactForm textarea:focus {
-  border: solid 1px #13b1e7;
-  box-shadow: 0 0 2px #0d92bf, 0px 0px 4px #0d92bf, 1px 1px 4px #13b1e7, 2px 2px 4px #13b1e7;
-  outline: none;
+border: solid 1px #13b1e7;
+box-shadow: 0 0 2px #0d92bf, 0px 0px 4px #0d92bf, 1px 1px 4px #13b1e7, 2px 2px 4px #13b1e7;
+outline: none;
 }
 
 /* radio buttons */
 .contactForm div.radioBtns {
-  margin: 1em 0;
-  max-width: 400px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, 1fr);
+margin: 1em 0;
+max-width: 400px;
+display: grid;
+grid-template-columns: repeat(3, auto);
+grid-template-rows: repeat(2, 1fr);
 }
 
 .radioBtns p {
-  padding-bottom: 0;
-  grid-column: span 3;
+padding-bottom: 0;
+grid-column: span 3;
 }
 
- input[type="radio"]:first-of-type {
-    margin-left: 0;
+input[type="radio"]:first-of-type {
+  margin-left: 0;
 }
 
 /* make the new radio button */
 .radioBtns span:before {
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  content: "\f111";
-  color: #13b1e7;
-  font-size: 1.2em;
-  vertical-align: middle;
-  margin: -4px 3px 0 0;
+display: inline-block;
+font-family: "Font Awesome 5 Free";
+content: "\f111";
+color: #13b1e7;
+font-size: 1.2em;
+vertical-align: middle;
+margin: -4px 3px 0 0;
 }
 
 .radioBtns label {
-  position: relative;
+position: relative;
 }
 /* hide the default radio buttons */
 .radioBtns input[type="radio"] {
-  position: absolute;
-  opacity: 0;
+position: absolute;
+opacity: 0;
 }
 /* create the on (selected) state */
 input[type="radio"]:checked ~ span:before {
-  content: "\f192"; /* unicode for fa dot circle */
+content: "\f192"; /* unicode for fa dot circle */
 }
 
 /* ######### 9b. Footer > Connect ######### */
-.social, .contactInfo {
+.social,
+.contactInfo {
   background-color: #13b1e7;
   color: #fff;
   padding: 1rem 1rem 0;
@@ -817,11 +831,11 @@ input[type="radio"]:checked ~ span:before {
   }
 
   .hero article {
-   max-width: 1000px;
-   grid-column: 3 / 6;
+    max-width: 1000px;
+    grid-column: 3 / 6;
   }
 
-/* ######### 10a-ii. Navigation, Large screen rules ######### */
+  /* ######### 10a-ii. Navigation, Large screen rules ######### */
   .navWrap {
     display: grid;
     grid-template-columns: 100px minmax(auto, 1100px);
@@ -844,14 +858,15 @@ input[type="radio"]:checked ~ span:before {
   }
 
   nav ul li a {
-    border-bottom: none;;
+    border-bottom: none;
   }
 
   nav ul li a:hover {
     background: transparent;
   }
 
-  nav::after, nav ul li:last-of-type::before {
+  nav::after,
+  nav ul li:last-of-type::before {
     display: none;
     padding: initial;
   }
@@ -870,15 +885,15 @@ input[type="radio"]:checked ~ span:before {
     background-color: #223054;
   }
 
-/* ######### 10a-iii. Trips, Large screen rules ######### */
+  /* ######### 10a-iii. Trips, Large screen rules ######### */
   .tripList {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .trips article {
-   width: 90%;
-   display: flex;
-   align-items: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
   }
 
   .trips h1 {
@@ -889,7 +904,7 @@ input[type="radio"]:checked ~ span:before {
     flex: 3;
   }
 
-/* ######### 10a-iv. CTA summaries, Large screen rules ######### */
+  /* ######### 10a-iv. CTA summaries, Large screen rules ######### */
   .cta {
     min-height: 200px;
     display: flex;
@@ -913,7 +928,7 @@ input[type="radio"]:checked ~ span:before {
     margin-right: 1rem;
   }
 
-/* ######### 10a-v. Team, Large screen rules ######### */
+  /* ######### 10a-v. Team, Large screen rules ######### */
   .team {
     max-width: 1000px;
     margin: auto;
@@ -933,7 +948,7 @@ input[type="radio"]:checked ~ span:before {
     order: 1;
     grid-column: 1 / -1;
   }
-
+  
   .team p {
     border-right: solid 1px #dedede;
     padding-right: 1rem;
@@ -943,7 +958,6 @@ input[type="radio"]:checked ~ span:before {
   }
 
   /* ######### 10a-vi. Problem, Large screen rules ######### */
-
   section.problem {
     background: url(../images/problem1.png) no-repeat center left;
     max-width: 1200px;
@@ -960,7 +974,9 @@ input[type="radio"]:checked ~ span:before {
     grid-column: 1 / 5;
   }
 
-  .problem h1 ~ p, .problem h3, .problem ul {
+  .problem h1 ~ p,
+  .problem h3,
+  .problem ul {
     grid-column: 5 / -1;
   }
 
@@ -973,36 +989,35 @@ input[type="radio"]:checked ~ span:before {
     display: none;
   }
 
+    /* ######### 10a-vii. Actions, Large screen rules ######### */
 
-  /* ######### 10a-vii. Actions, Large screen rules ######### */
-
-  .action {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  .action article {
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
-  .action article h1 {
-    text-align: right;
-    margin-right: 1rem;
-  }
-
-  .action ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .action ul li {
-    flex-basis: 48%;
-    grid-template-columns: 2fr 4fr;
-  }
-
+    .action {
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    .action article {
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  
+    .action article h1 {
+      text-align: right;
+      margin-right: 1rem;
+    }
+  
+    .action ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .action ul li {
+      flex-basis: 48%;
+      grid-template-columns: 2fr 4fr;
+    }
+  
   /* ######### 10a-viii. Footer, Large screen rules ######### */
   footer {
     display: grid;
@@ -1042,9 +1057,7 @@ input[type="radio"]:checked ~ span:before {
     padding: 1rem 0 0;
     grid-column: 1 / -1;
   }
-
 }
-
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
@@ -1111,7 +1124,6 @@ input[type="radio"]:checked ~ span:before {
 
   .contactForm button {
     width: 100%;
-    grid-area: btn;
   }
 
   .contactForm textarea {
@@ -1135,5 +1147,4 @@ input[type="radio"]:checked ~ span:before {
     display: inline-block;
     font-size: 180%;
   }
-
 }
