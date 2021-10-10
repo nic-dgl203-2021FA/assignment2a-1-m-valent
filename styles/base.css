@@ -910,21 +910,31 @@ footer {
     padding: 1rem 0 0;
     grid-column: 1 / -1;
   }
-}
+
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
   .form {
+    display: grid;
+    grid-template-columns: auto minmax(min-content, 580px);
+    grid-template-areas:
+      ". h"
+      ". p";
   }
 
   .form h3 {
+    grid-area: h;
   }
 
   .form p.formIntro {
+    grid-area: p;
   }
 
   .social article {
     max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .socialIcons {
